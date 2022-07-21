@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-07-22T00:40:59 IST" name="Default suite" finished-at="2022-07-22T00:41:57 IST" duration-ms="58278">
+    <groups>
+    </groups>
+    <test started-at="2022-07-22T00:40:59 IST" name="Default test" finished-at="2022-07-22T00:41:57 IST" duration-ms="58278">
+      <class name="TestCases.HrmLogin">
+        <test-method is-config="true" signature="initilization()[pri:0, instance:TestCases.HrmLogin@74751b3]" started-at="2022-07-22T00:40:59 IST" name="initilization" finished-at="2022-07-22T00:41:07 IST" duration-ms="7637" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilization -->
+        <test-method signature="Login(java.lang.String,java.lang.String)[pri:0, instance:TestCases.HrmLogin@74751b3]" started-at="2022-07-22T00:41:07 IST" name="Login" data-provider="passdata" finished-at="2022-07-22T00:41:12 IST" duration-ms="5217" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method is-config="true" signature="initilization()[pri:0, instance:TestCases.HrmLogin@74751b3]" started-at="2022-07-22T00:41:12 IST" name="initilization" finished-at="2022-07-22T00:41:17 IST" duration-ms="4980" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilization -->
+        <test-method signature="Login(java.lang.String,java.lang.String)[pri:0, instance:TestCases.HrmLogin@74751b3]" started-at="2022-07-22T00:41:17 IST" name="Login" data-provider="passdata" finished-at="2022-07-22T00:41:19 IST" duration-ms="1853" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method is-config="true" signature="initilization()[pri:0, instance:TestCases.HrmLogin@74751b3]" started-at="2022-07-22T00:41:19 IST" name="initilization" finished-at="2022-07-22T00:41:24 IST" duration-ms="4833" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilization -->
+        <test-method signature="Login(java.lang.String,java.lang.String)[pri:0, instance:TestCases.HrmLogin@74751b3]" started-at="2022-07-22T00:41:24 IST" name="Login" data-provider="passdata" finished-at="2022-07-22T00:41:25 IST" duration-ms="1655" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Samamsa]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[daasd132]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method is-config="true" signature="initilization()[pri:0, instance:TestCases.HrmLogin@74751b3]" started-at="2022-07-22T00:41:25 IST" name="initilization" finished-at="2022-07-22T00:41:30 IST" duration-ms="5066" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilization -->
+        <test-method signature="Login(java.lang.String,java.lang.String)[pri:0, instance:TestCases.HrmLogin@74751b3]" started-at="2022-07-22T00:41:30 IST" name="Login" data-provider="passdata" finished-at="2022-07-22T00:41:32 IST" duration-ms="1469" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Fasdas]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[asdsad]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method is-config="true" signature="initilization()[pri:0, instance:TestCases.HrmLogin@74751b3]" started-at="2022-07-22T00:41:32 IST" name="initilization" finished-at="2022-07-22T00:41:37 IST" duration-ms="5671" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilization -->
+        <test-method signature="Login(java.lang.String,java.lang.String)[pri:0, instance:TestCases.HrmLogin@74751b3]" started-at="2022-07-22T00:41:37 IST" name="Login" data-provider="passdata" finished-at="2022-07-22T00:41:57 IST" duration-ms="19844" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[SAFFdf]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[cdsdcsdcds]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+      </class> <!-- TestCases.HrmLogin -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
