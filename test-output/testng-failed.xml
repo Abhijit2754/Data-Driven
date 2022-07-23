@@ -5,8 +5,10 @@
     <classes>
       <class name="TestCases.HrmLogin">
         <methods>
+          <include name="check_forget_click_working_or_nt"/>
           <include name="initilization"/>
-          <include name="Login" invocation-numbers="0 2 3"/>
+          <include name="tearDown"/>
+          <include name="Login" invocation-numbers="0 2 3 4"/>
         </methods>
       </class> <!-- TestCases.HrmLogin -->
     </classes>

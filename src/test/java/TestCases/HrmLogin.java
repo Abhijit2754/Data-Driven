@@ -15,6 +15,8 @@ import DataProvider.*;
 
 public class HrmLogin extends BaseClass  {
 	
+	LoginPage login;
+	
 	@BeforeMethod
 	public void initilization()
 	{
@@ -25,7 +27,7 @@ public class HrmLogin extends BaseClass  {
 	@Test(dataProvider = "passdata", dataProviderClass = GetDataFromExcel.class)	
 	public void Login(String getUsername, String getPassword) 
 	{	
-		LoginPage login = new LoginPage(driver);		
+		login = new LoginPage(driver);		
 		login.userName(getUsername);
 		login.password(getPassword);
 		login.clickButton();
@@ -35,19 +37,15 @@ public class HrmLogin extends BaseClass  {
 	@Test
 	public void checkLinks()
 	{
-		List<WebElement> list = driver.findElements(By.tagName("a"));
-		
-		System.out.println("List of link on page is :"+list.size());
-		
-		for(WebElement i :list)
-		{
-			String getValue = i.getAttribute("href");
-			if(getValue.isEmpty())
-			{
-				Assert.assertTrue(false);
-			}
-		}
+		login = new LoginPage(driver);
+		login.checkLink();
 	}
+	
+	@Test
+	public void check_forget_click_working_or_nt()
+	{
+		login.checkLinktest();
+	}	
 	
 	@AfterMethod
 	public void tearDown()
