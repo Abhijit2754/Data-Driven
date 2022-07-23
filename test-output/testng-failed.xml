@@ -6,7 +6,7 @@
       <class name="TestCases.HrmLogin">
         <methods>
           <include name="initilization"/>
-          <include name="Login"/>
+          <include name="Login" invocation-numbers="0 2 3"/>
         </methods>
       </class> <!-- TestCases.HrmLogin -->
     </classes>

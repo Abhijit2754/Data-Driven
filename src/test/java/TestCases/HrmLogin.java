@@ -1,12 +1,17 @@
 package TestCases;
 
-import org.openqa.selenium.chrome.ChromeDriver;
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import Configuration.BaseClass;
 import ObjectMethods.LoginPage;
-import io.github.bonigarcia.wdm.WebDriverManager;
+import junit.framework.Assert;
+import DataProvider.*;
 
 public class HrmLogin extends BaseClass  {
 	
@@ -17,38 +22,36 @@ public class HrmLogin extends BaseClass  {
 		getUrl();
 	}
 	
-	@Test(dataProvider = "passdata")	
+	@Test(dataProvider = "passdata", dataProviderClass = GetDataFromExcel.class)	
 	public void Login(String getUsername, String getPassword) 
 	{	
 		LoginPage login = new LoginPage(driver);		
 		login.userName(getUsername);
 		login.password(getPassword);
 		login.clickButton();
+		Assert.assertEquals(driver.getCurrentUrl(),"https://opensource-demo.orangehrmlive.com/index.php/dashboard");
+	}
+
+	@Test
+	public void checkLinks()
+	{
+		List<WebElement> list = driver.findElements(By.tagName("a"));
 		
+		System.out.println("List of link on page is :"+list.size());
 		
+		for(WebElement i :list)
+		{
+			String getValue = i.getAttribute("href");
+			if(getValue.isEmpty())
+			{
+				Assert.assertTrue(false);
+			}
+		}
 	}
 	
-	@DataProvider(name="passdata")
-	public String[][] datapass()
+	@AfterMethod
+	public void tearDown()
 	{
-		String[][] data = new String[5][2];
-		
-		data[0][0] = "Admin";
-		data[0][1] = "admin123";
-		
-		data[1][0] = "Admin";
-		data[1][1] = "password";
-		
-		data[2][0] = "Samamsa";
-		data[2][1] = "daasd132";
-		
-		data[3][0] = "Fasdas";
-		data[3][1] = "asdsad";
-		
-		data[4][0] = "SAFFdf";
-		data[4][1] = "cdsdcsdcds";
-		
-		
-		return data;
+		driver.close();
 	}
 }

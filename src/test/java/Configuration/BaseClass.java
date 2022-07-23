@@ -16,6 +16,6 @@ public class BaseClass {
 	
 	public void getUrl()
 	{
-		driver.get("https://opensource-demo.orangehrmlive.com/index.php/dashboard");	
+		driver.get("https://opensource-demo.orangehrmlive.com/");	
 	}
 }
