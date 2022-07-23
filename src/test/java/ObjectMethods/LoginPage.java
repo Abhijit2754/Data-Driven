@@ -4,6 +4,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import ActionClass.ActionsClassMethod;
+
 public class LoginPage {
 	
 	public WebDriver driver;
